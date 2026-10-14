@@ -1,16 +1,4 @@
-﻿python.exe : [main]	INFO	profile include tests: None
-At line:1 char:11
-+ $bandit = & $py -m bandit -r $src 2>&1 | Out-String
-+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: ([main]	INFO	profile include tests 
-   : None:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-[main]	INFO	profile exclude tests: None
-[main]	INFO	cli include tests: None
-[main]	INFO	cli exclude tests: None
-[main]	INFO	running on Python 3.15.0
-Run started:2026-10-14 08:14:03.141010+00:00
+﻿Run started:2026-10-14 08:39:45.124246+00:00
 
 Test results:
 	No issues identified.
@@ -32,4 +20,3 @@ Run metrics:
 		Medium: 0
 		High: 0
 Files skipped (0):
-
