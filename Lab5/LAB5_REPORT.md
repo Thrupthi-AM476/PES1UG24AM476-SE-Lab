@@ -24,6 +24,7 @@ Static code analysis is the process of examining source code without executing i
 | 6 | Non-snake_case names (C0103) | Pylint | multiple | Functions named `addStock`, `removeStock`, `getStock`, etc. violate PEP 8. | Renamed all functions to snake_case; updated all call sites. | Pylint C0103 warnings eliminated; NameErrors resolved. |
 | 7 | Mutable default argument (W0102) | Pylint | 12 | `def addStock(sku, qty, history=[])` — mutable default is shared across calls. | Changed to `history=None`; assign `history = []` inside function. | Pylint W0102 warning eliminated. |
 | 8 | File opened without context manager (R1732) | Pylint/Flake8 | 34, 40, 63 | `open()` without `with` risks resource leaks. | All file operations converted to `with open(...) as f:` with `encoding='utf-8'`. | Pylint R1732 and Flake8 context-manager warnings eliminated. |
+| 9 | Unconditional `main()` call at module level | Logic / Best practice | bottom | `main()` called unconditionally at import time. Importing the module in tests or other scripts runs the demo, writes files, and pollutes the environment. | Wrapped in `if __name__ == "__main__": main()`. | Program runs correctly when executed directly; does not execute on import. |
 
 ## Pylint Scores
 
@@ -49,15 +50,9 @@ Static code analysis is the process of examining source code without executing i
 
 ## Reflection
 
-The lab README did not include specific reflection questions. Based on the work done:
+See `reflection.md` for full answers to the lab reflection questions.
 
-1. **What did static analysis reveal that code review might miss?** The tools found systematic issues that are easy to overlook in manual review: all eight functions lacked docstrings, six function names violated snake_case, and two `eval()` calls created security vulnerabilities. Bandit's severity ratings helped prioritise the most dangerous issues first.
-
-2. **How did fixing one tool's findings affect the others?** Fixing Pylint naming violations (renaming functions to snake_case) also fixed Flake8 E501 violations that came from long names. Removing the `global` statement to satisfy Pylint also removed a source of fragility flagged implicitly by the code structure.
-
-3. **What is the trade-off between suppressing warnings and fixing them?** Suppressing warnings (`# nosec`, `# noqa`, `# pylint: disable`) hides real problems and degrades the signal-to-noise ratio for future developers. Every finding suppressed makes the codebase harder to audit. The correct approach is to fix the root cause.
-
-4. **What remains after the tools are satisfied?** Static analysis cannot detect all bugs. The original `add_stock` function did nothing with its arguments — it never added to `warehouse_stock`. The tools did not flag this logic bug; it required reading the code carefully and running the program to discover it.
+The lab README states the four reflection questions are in the physical handout (not in the repository). The reflection file covers the key themes: what tools found vs. manual review, fixing vs. suppressing warnings, priority of findings, and static analysis limitations.
 
 ## Conclusion
 

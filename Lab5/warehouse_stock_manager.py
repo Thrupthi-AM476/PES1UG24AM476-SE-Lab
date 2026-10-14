@@ -154,4 +154,5 @@ def main():
     print("stock audit complete")
 
 
-main()
+if __name__ == "__main__":
+    main()
