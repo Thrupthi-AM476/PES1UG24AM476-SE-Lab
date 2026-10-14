@@ -1,0 +1,19 @@
+[1mwarehouse_stock_manager.py[m[36m:[m2[36m:[m1[36m:[m [1m[31mF401[m 'logging' imported but unused
+[1mwarehouse_stock_manager.py[m[36m:[m4[36m:[m1[36m:[m [1m[31mF401[m 'os' imported but unused
+[1mwarehouse_stock_manager.py[m[36m:[m12[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m16[36m:[m80[36m:[m [1m[31mE501[m line too long (83 > 79 characters)
+[1mwarehouse_stock_manager.py[m[36m:[m18[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m23[36m:[m5[36m:[m [1m[31mE722[m do not use bare 'except'
+[1mwarehouse_stock_manager.py[m[36m:[m26[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m29[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m33[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m39[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m44[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m47[36m:[m80[36m:[m [1m[31mE501[m line too long (85 > 79 characters)
+[1mwarehouse_stock_manager.py[m[36m:[m49[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m54[36m:[m5[36m:[m [1m[31mF841[m local variable 'total_units' is assigned to but never used
+[1mwarehouse_stock_manager.py[m[36m:[m54[36m:[m48[36m:[m [1m[31mW291[m trailing whitespace
+[1mwarehouse_stock_manager.py[m[36m:[m57[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m64[36m:[m80[36m:[m [1m[31mE501[m line too long (107 > 79 characters)
+[1mwarehouse_stock_manager.py[m[36m:[m67[36m:[m1[36m:[m [1m[31mE302[m expected 2 blank lines, found 1
+[1mwarehouse_stock_manager.py[m[36m:[m82[36m:[m1[36m:[m [1m[31mE305[m expected 2 blank lines after class or function definition, found 1

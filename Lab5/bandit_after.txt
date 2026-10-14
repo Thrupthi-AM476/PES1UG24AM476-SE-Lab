@@ -1,0 +1,34 @@
+﻿.\venv\Scripts\python.exe : [main]	INFO	profile include tests: None
+At line:1 char:126
++ ... use-stock"; .\venv\Scripts\python.exe -m bandit -r warehouse_stock_ma ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([main]	INFO	profile include tests 
+   : None:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.15.0
+Run started:2026-10-14 07:53:09.855062+00:00
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 130
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 0
+Files skipped (0):
